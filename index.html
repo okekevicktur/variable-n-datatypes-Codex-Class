@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables and Datatypes in Javascript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      header {
+        background: #35424a;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Variables and Datatypes in Javascript</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#what-are-variables">What are variables</a></li>
+          <li><a href="#what-are-datatypes">What are datatypes</a></li>
+          <li><a href="#types-of-datatypes">Types of datatypes</a></li>
+          <li><a href="./practicals.html">See Practicals</a></li>
+
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+      <section id="what-are-variables">
+        <h2>What are variables</h2>
+        <p>
+          Variables are containers for storing data values. In JavaScript,
+          variables are used to hold data that can be changed during the
+          execution of a program.
+        </p>
+        <p>
+          You can create a variable using the <code>var</code>,
+          <code>let</code>, or <code>const</code> keywords. The
+          <code>var</code> keyword is used to declare a variable that can be
+          re-assigned, while <code>let</code> is used for block-scoped
+          variables, and <code>const</code> is used for constants that cannot be
+          re-assigned.
+        </p>
+        <h2>Examples of variables</h2>
+        <div>
+          <pre style="background-color: rgb(209, 176, 176)"><code>
+    var name = "John Doe"; // String
+    let age = 30; // Number
+    const isStudent = true; // Boolean
+    let hobbies = ["reading", "gaming"]; // Array
+    let address =
+     { city: "New York", zip: 10001 }; // Object
+     let isActive = null; // Null
+    let undefinedVar; // Undefined
+    let bigIntNum = 12345678901234567890n; // BigInt
+    let symbolVar = Symbol("unique"); // Symbol
+    </code></pre>
+        </div>
+      </section>
+      <section id="what-are-datatypes">
+        <h2>What are datatypes</h2>
+        <p>
+          Datatypes are the classification of data items. In JavaScript, there
+          are two types of datatypes: primitive and non-primitive.
+        </p>
+        <p>
+          Primitive datatypes include <code>string</code>, <code>number</code>,
+          <code>boolean</code>, <code>null</code>, <code>undefined</code>,
+          <code>bigint</code>, and <code>symbol</code>. Non-primitive datatypes
+          include objects and arrays.
+        </p>
+      </section>
+      <section id="types-of-datatypes">
+        <h2>Types of datatypes</h2>
+        <div>
+          <h3>Primitive Datatypes</h3>
+          <ul>
+            <li>
+              <strong>String:</strong> Represents a sequence of characters.
+            </li>
+            <li><strong>Number:</strong> Represents numeric values.</li>
+            <li><strong>Boolean:</strong> Represents true or false values.</li>
+            <li>
+              <strong>Null:</strong> Represents an intentional absence of any
+              value.
+            </li>
+            <li>
+              <strong>Undefined:</strong> Represents a variable that has been
+              declared but not assigned a value.
+            </li>
+            <li>
+              <strong>BigInt:</strong> Represents integers with arbitrary
+              precision.
+            </li>
+            <li><strong>Symbol:</strong> Represents a unique identifier.</li>
+          </ul>
+          <h3>Non-Primitive Datatypes</h3>
+          <ul>
+            <li>
+              <strong>Object:</strong> A collection of properties and methods.
+            </li>
+            <li>
+              <strong>Array:</strong> A special type of object used to store
+              multiple values in a single variable.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          Understanding variables and datatypes is crucial for programming in
+          JavaScript. Variables allow you to store and manipulate data, while
+          datatypes help you understand the kind of data you are working with.
+        </p>
+      </section>
+
+      <footer
+        style="
+          background-color: #35424a;
+          color: #ffffff;
+          text-align: center;
+          padding: 10px 0;
+          position: relative;
+          bottom: 0;
+          width: 100%;
+        "
+      >
+        <p>&copy; 2023 Variables and Datatypes in Javascript for CODEX CLASS</p>
+      </footer>
+    </div>
+  </body>
+</html>

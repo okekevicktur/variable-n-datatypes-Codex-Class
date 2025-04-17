@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatypes Practicals</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 85%;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: #f4f4f4;
+        overflow: hidden;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .string {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .string h2 {
+        font-size: 24px;
+        color: #333;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: pink;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      h1 {
+        background: #35424a;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DATATYPES PRACTICALS</h1>
+    <div class="container">
+      <div class="string">
+        <h2>String</h2>
+        <p>Example: "Hello, World!"</p>
+        <pre>
+            let greeting = "Hello, World!";
+            console.log(greeting);
+        </pre>
+        <p>Output: <strong id="clickString"></strong></p>
+        <button
+          onclick="document.getElementById('clickString').innerHTML= 'Hello World';"
+        >
+          Click to Ouput Sting
+        </button>
+      </div>
+      <div class="string">
+        <h2>Number</h2>
+        <p>Example: 10, 11, 400000, 3.142</p>
+        <pre>
+        let x, y, z, sum;
+        x = 10; // Integer
+        y = 3.14; // Float
+        z = 400000; // Large Integer
+        sum = x + y + z; // Addition
+        console.log(greeting);
+    </pre
+        >
+        <p>Output: <strong id="clickNumber"></strong></p>
+        <button
+          onclick="document.getElementById('clickNumber').innerHTML=  10 + 3.14 + 400000;"
+        >
+          Calculate
+        </button>
+      </div>
+      <div class="string">
+        <h2>Boolean</h2>
+        <p>Example: true, false, 0 , 1</p>
+        <pre>
+        let isStudent = true; // Boolean
+        console.log(isStudent); // Output: true
+        let isGreater = 5 > 3; // Comparison
+        console.log(isGreater); // Output: true
+         let isEqual = 5 == 5; // Equality
+        console.log(isEqual); // Output: true
+        let isFalse = false; // Boolean
+        console.log(isFalse); // Output: false
+        let isLess = 5 < 3; // Comparison   
+        console.log(isLess); // Output: false
+        
+        
+        </pre>
+        <p>Output: <strong id="clickBoolean"></strong></p>
+        <button
+          onclick="document.getElementById('clickNumber').innerHTML=  10 + 3.14 + 400000;"
+        >
+          Calculate
+        </button>
+      </div>
+      <div class="string">
+        <h2>Array</h2>
+        <p>Example: fruits = ["orange", "Mango"]</p>
+        <pre>
+let fruits = ["orange", "Mango"];
+console.log(fruits); // Output: ["orange", "Mango"]
+console.log(fruits[0]); // Output: "orange"
+console.log(fruits[1]); // Output: "Mango"
+console.log(fruits.length); // Output: 2
+    
+
+    </pre
+        >
+        <p>Output: <strong id="clickArray"></strong></p>
+        <button
+          onclick="document.getElementById('clickNumber').innerHTML=  10 + 3.14 + 400000;"
+        >
+          Calculate
+        </button>
+      </div>
+      <div class="string">
+        <h2>Object</h2>
+        <p>Example: person = { name: "John", age: 30 }</p>
+        <pre>
+        let person = { name: "John", age: 30 };
+        console.log(person); 
+        // Output: { name: "John", age: 30 }
+        console.log(person.name); // Output: "John"
+        console.log(person.age); // Output: 30
+        console.log(person["name"]); // Output: "John"
+        console.log(person["age"]); // Output: 30
+        </pre>
+        <p>Output: <strong id="clickObject"></strong></p>
+
+        <button
+          onclick="document.getElementById('clickObject').innerHTML=  '';"
+        >
+          Calculate
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const outputString = document.getElementById("clickNumber");
+      let x, y, z, sum;
+      x = 10; // Integer
+      y = 3.14; // Float
+      z = 400000; // Large Integer
+      sum = x + y + z; // Addition
+      console.log(sum);
+      //   outputString.innerHTML = "Hello World!";
+
+      let isStudent = true; // Boolean
+      console.log(isStudent); // Output: true
+      let isGreater = 5 > 3; // Comparison
+      console.log(isGreater); // Output: true
+      let isEqual = 5 == 5; // Equality
+      console.log(isEqual); // Output: true
+      let isFalse = false; // Boolean
+      console.log(isFalse); // Output: false
+      let isLess = 5 < 3; // Comparison
+      console.log(isLess); // Output: false
+
+      let fruits = ["orange", "Mango", "banana", "apple"];
+      console.log(fruits); // Output: ["orange", "Mango"]
+      console.log(fruits[0]); // Output: "orange"
+      console.log(fruits[1]); // Output: "Mango"
+      console.log(fruits[2]); // Output: "banana"
+      console.log(fruits[3]); // Output: "apple"
+      console.log(fruits.length); // Output: 4
+
+      let person = { name: "John", age: 30 };
+      console.log(person); // Output: { name: "John", age: 30 }
+      console.log(person.name); // Output: "John"
+      console.log(person.age); // Output: 30
+      console.log(person["name"]); // Output: "John"
+      console.log(person["age"]); // Output: 30
+    </script>
+  </body>
+</html>
